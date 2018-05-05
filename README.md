@@ -4,7 +4,7 @@ Timer Object for Python to easily track duration. Made for a wider project as a 
 
 # USAGE:
 
-The class stores the UNIX time (in seconds) at time of being called with .start() method (not initialization) and will give back the current time since then when prompted (duration). Usage case scenario would be if you're doing a lot of timers for a RaspberryPI script (e.g. LED) and don't want to use sleep delays.
+The class stores the UNIX time (in seconds) at time of being called with .start() method (not initialization) and will give back the elapsed time being started as a float in seconds (e.g. 2.5443). Usage case scenario would be if you're doing a lot of timers for a RaspberryPI script (e.g. LED) and don't want to use sleep delays.
 
 Includes a pause ability with the .stop() method. If you .start() a timer and then .stop() it (without destroying object or using the reset method), then .start() it again and .stop() it again, the time reported is the SUM of all the intervals.
 
