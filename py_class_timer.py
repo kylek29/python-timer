@@ -3,6 +3,16 @@
 Created on Sun Apr 22 16:23:55 2018
 
 @author: kylek
+
+Real quick timer object for duration calculation. 
+
+If you want a singular timer object that can be started and stopped (paused) linearly, just use one timer object. If you need 
+multiple timers that have differing start/stops (overlapping), create multiple objects, like:
+timer_A = Timer()
+timer_B = Timer()
+
+You can reset the timer object with object_name.reset(). The last sum of timer intervals will be stored in object_name.last_timer for future referencing.
+
 """
 
 import time
